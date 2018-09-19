@@ -4,28 +4,34 @@
 	<script>
 		var opt;
 		do{
-			opt=parseInt(prompt("1. Addtion 2. Subtraction 3.Multiplication 4. Quit"));
+			opt=parseFloat(prompt("1. Addtion \n 2. Subtraction \n 3.Multiplication \n 4. Division \n 5. Quit"));
 			switch (opt)
 			{
 				case 1:
-					var a =parseInt(prompt("Enter the First Number : "));
-					var b =parseInt(prompt("Enter the Second Number : "));
+					var a =parseFloat(prompt("Enter the First Number : "));
+					var b =parseFloat(prompt("Enter the Second Number : "));
 					var c = a+b;
 					alert("Result = "+c);
 					break;
 				case 2:
-					var a =parseInt(prompt("Enter the First Number : "));
-					var b =parseInt(prompt("Enter the Second Number : "));
+					var a =parseFloat(prompt("Enter the First Number : "));
+					var b =parseFloat(prompt("Enter the Second Number : "));
 					var c = a-b;
 					alert("Result = "+c);
 					break;
 				case 3:
-					var a =parseInt(prompt("Enter the First Number : "));
-					var b =parseInt(prompt("Enter the Second Number : "));
+					var a =parseFloat(prompt("Enter the First Number : "));
+					var b =parseFloat(prompt("Enter the Second Number : "));
 					var c = a*b;
 					alert("Result = "+c);
 					break;
 				case 4:
+					var a =parseFloat(prompt("Enter the First Number : "));
+					var b =parseFloat(prompt("Enter the Second Number : "));
+					var c = a/b;
+					alert("Result = "+c);
+					break;
+				case 5:
 					document.write("Thank You :) ");
 					break;
 					
@@ -33,9 +39,9 @@
 					alert("Invalid option");
 					break;
 			}
-		}while(opt!=4)
+		}while(opt!=5);
 	</script>
 	</head>
-	<body bgcolor="white">
+	<body bgcolor=#ddffef>
 	</body>
 </html>
