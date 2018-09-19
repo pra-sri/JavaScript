@@ -1,0 +1,41 @@
+<html>
+	<head>
+	<title>JavaScript</title>
+	<script>
+		var opt;
+		do{
+			opt=parseInt(prompt("1. Addtion 2. Subtraction 3.Multiplication 4. Quit"));
+			switch (opt)
+			{
+				case 1:
+					var a =parseInt(prompt("Enter the First Number : "));
+					var b =parseInt(prompt("Enter the Second Number : "));
+					var c = a+b;
+					alert("Result = "+c);
+					break;
+				case 2:
+					var a =parseInt(prompt("Enter the First Number : "));
+					var b =parseInt(prompt("Enter the Second Number : "));
+					var c = a-b;
+					alert("Result = "+c);
+					break;
+				case 3:
+					var a =parseInt(prompt("Enter the First Number : "));
+					var b =parseInt(prompt("Enter the Second Number : "));
+					var c = a*b;
+					alert("Result = "+c);
+					break;
+				case 4:
+					document.write("Thank You :) ");
+					break;
+					
+				default:
+					alert("Invalid option");
+					break;
+			}
+		}while(opt!=4)
+	</script>
+	</head>
+	<body bgcolor="white">
+	</body>
+</html>
